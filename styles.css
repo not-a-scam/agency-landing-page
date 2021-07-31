@@ -299,11 +299,70 @@ footer{
     order: -1; 
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 330px){
+    .header-title{
+        font-size: 1.6rem;
+        margin: 15% 0 8%;
+    }
 
+    .service-content h2{
+        font-size: 1.3rem;
+    }
+
+    .service-content p{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 500px){
+    .content-container, .info-container{
+        padding: 5% 7%
+    }
+
+    .header-title{
+        font-size: 4rem;
+        margin: 35% 0 8%;
+    }
+
+    .service-text h2{
+        font-size: 3.5rem;
+    }
+
+    .service-text p{
+        font-size: 1.5rem;
+        margin-bottom: 20%;
+    }
+
+    .testimonial-heading{
+        font-size: 1.5rem;
+    }
+
+    .testimonial-content{
+        font-size: 1.3rem;
+    }
+
+    .client-name{
+        font-size: 1.7rem;
+    }
+
+    .client-position{
+        font-size: 1.1rem;
+    }
+
+    footer{
+        padding: 3% 25% 0;
+    }
+
+    .footer-logo{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 900px){
     .content-container{
         padding: 3% 5%;
     }
+
     .hamburger-btn{
         display: none;
     }
@@ -336,15 +395,17 @@ footer{
         padding: 0;
         color: hsl(0, 0%, 100%);
         margin: auto;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .contact-btn{
         background-color: hsl(0, 0%, 100%);
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
     }
 
     .header-title{
-        font-size: 4rem;
+        font-size: 3rem;
         margin: 6% 0;
     }
 
@@ -378,11 +439,12 @@ footer{
     }
 
     .info-container{
-        padding: 19%;
+        margin: auto;
+        width: 60%;
     }
 
     .service-info-title{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .underline{
@@ -400,15 +462,15 @@ footer{
     }
 
     .service-text{
-        margin: 0 21%;
+        margin: 0 11%;
     }
 
     .service-content h2{
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .service-content p{
-        padding-bottom: 2%;
+        margin-bottom: 9%;
     }
 
     #testimonials .content-container{
@@ -460,6 +522,38 @@ footer{
 
     .page-link{
         font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .contact-btn{
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .nav-link{
+        font-size: 1.4rem;
+    }
+
+    .nav-links{
+        width: 40%;
+    }
+
+    .header-title{
+        font-size: 4rem;
+    }
+
+    .service-info-title{
+        font-size: 3rem;
+    }
+
+    .service-text{
+        margin: 0 21%;
+    }
+
+    .service-content h2{
+        font-size: 2rem;
     }
 
 }
