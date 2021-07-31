@@ -30,6 +30,11 @@ header{
     padding: 1.7em 1.3em;
 }
 
+.info-container{
+    position: relative;
+    padding: 1.7em 1.3em;
+}
+
 .header-content{
     position: absolute;
     width: 100%;
@@ -39,6 +44,8 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: relative;
+    margin: 2% 0;
 }
 
 .logo {
@@ -46,16 +53,54 @@ header{
     width: 30%;
 }
 
+.triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 2em solid hsl(0, 0%, 100%);
+    border-left: 2em solid transparent;
+    margin: 0 0 -1px auto;
+}
+
+.link-container{
+    padding: 15%;
+}
+
 .nav-links {
     display: none;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transform: translate(0, 12%);
+    text-align: center;
 }
 
-.hamburger-icon {
+.nav-link{
+    display: block;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    color: hsl(213, 9%, 39%);
+    font-size: 1.2rem;
+    padding-bottom: 15%;
 }
 
-/* .nav-link{
-    
-} */
+.link-container{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.contact-btn{
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    background-color: hsl(51, 100%, 49%);
+    border: none;
+    border-radius: 100vh;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.hamburger-btn {
+    background-color: transparent;
+    border: none;
+}
 
 .header-title{
     font-size: 2.3rem;
@@ -71,16 +116,24 @@ header{
     margin: auto;
 }
 
-.header-img{
+.header-img-m{
     width: 100%;
 }  
+
+.header-img-d{
+    display: none;
+}
 
 .service-info{
     text-align: center;
 }
 
-.service-info img{
+.info-img-mobile, .content-img-mobile{
     width: 100%;
+}
+
+.info-img-desktop, .content-img-desktop{
+    display: none;
 }
 
 .service-info-title{
@@ -128,10 +181,6 @@ header{
     width: 100%;
 }
 
-.service-content img{
-    width: 100%;
-}
-
 .service-text {
     position: absolute;
     text-align: center;
@@ -166,6 +215,7 @@ header{
     letter-spacing: .3rem;
     font-size: .9rem;
     margin: 2rem 0 4rem;
+    font-weight: 700;
 }
 
 .testimonial-img{
@@ -200,8 +250,12 @@ header{
     flex-wrap: wrap;
 }
 
-.gallery-img{
+.gallery-img-mobile {
     width: 50%;
+}
+
+.gallery-img-desktop{
+    display: none;
 }
 
 footer{
@@ -239,6 +293,175 @@ footer{
 
 .social-link img{
     margin: auto;
+}
+
+.first-box{
+    order: -1; 
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .content-container{
+        padding: 3% 5%;
+    }
+    .hamburger-btn{
+        display: none;
+    }
+
+    .logo{
+        margin: auto 0 auto;
+        width: 20%;
+        height: auto;
+    }
+
+    .nav-links {
+        display: block;
+        position: relative;
+        width: 45%;
+    }
+
+    .link-tail{
+        display: none;
+    }
+
+    .link-container{
+        padding: 0;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav-link{
+        display: inline;
+        padding: 0;
+        color: hsl(0, 0%, 100%);
+        margin: auto;
+        font-size: 1.4rem;
+    }
+
+    .contact-btn{
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .header-title{
+        font-size: 4rem;
+        margin: 6% 0;
+    }
+
+    .header-img-m{
+        display: none;
+    }
+
+    .header-img-d{
+        display: block;
+        width: 100%;
+    }
+
+    .service-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info-img-mobile, .content-img-mobile{
+        display: none;
+    }
+
+    .info-img-desktop{
+        display: block;
+        width: 50%;
+    }
+
+    .info-content{
+        width: 50%;
+        text-align: left;
+        margin: auto;
+    }
+
+    .info-container{
+        padding: 19%;
+    }
+
+    .service-info-title{
+        font-size: 3rem;
+    }
+
+    .underline{
+        margin: auto auto auto 0;
+        transform: translate(-.5rem, -.4rem);
+    }
+
+    .service-content{
+        width: 50%;
+    }
+
+    .content-img-desktop{
+        display: block;
+        width: 100%;
+    }
+
+    .service-text{
+        margin: 0 21%;
+    }
+
+    .service-content h2{
+        font-size: 2rem;
+    }
+
+    .service-content p{
+        padding-bottom: 2%;
+    }
+
+    #testimonials .content-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .testimonial-heading{
+        width: 100%;
+        font-size: 1.3rem;
+        margin: 9% 0 6%;
+
+    }
+
+    .testimony{
+        width: 33%;
+    }
+
+    .testimonial-img {
+        margin-bottom: 13%;
+    }
+
+    .testimonial-content{
+        padding: 0 13%;
+        margin-bottom: 17%;
+    }
+
+    .client-position{
+        margin-bottom: 25%;
+    }
+
+    .gallery-img-mobile {
+        display: none;
+    }
+    
+    .gallery-img-desktop{
+        display: block;
+        width: 25%;
+    }
+
+    footer{
+        padding: 2% 35% 0;
+    }
+
+    .footer-logo{
+        width: 50%;
+    }
+
+    .page-link{
+        font-size: 1.3rem;
+    }
+
 }
 
 /* .attribution { 
