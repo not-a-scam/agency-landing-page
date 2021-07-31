@@ -97,6 +97,11 @@ header{
     font-size: 1.1rem;
 }
 
+.contact-btn:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(198, 97%, 75%);
+}
+
 .hamburger-btn {
     background-color: transparent;
     border: none;
@@ -150,21 +155,25 @@ header{
 }
 
 .learn-more{
+    position: relative;
     display: block;
     font-family: 'Fraunces', serif;
     color: hsl(212, 27%, 19%);
     text-transform: uppercase;
-    padding: 3% 0 10%;
+    margin: 3% 0 10%;
     /* text-decoration-color: hsla(51, 100%, 49%, 0.288); */
     text-decoration: none;
 }
 
 .underline{
+    position: absolute;
     height: .5rem;
     width: 8.2rem;
     margin: auto;
     border-radius: 100vh;
-    transform: translate(0, -.4rem);
+    bottom: -5%;
+    left: 0;
+    right: 0;
     z-index: -1;
 }
 
@@ -281,6 +290,10 @@ footer{
     flex: 1 0 auto;
 }
 
+.page-link:hover{
+    color: hsl(0, 0%, 100%);
+}
+
 .social-links{
     display: flex;
     justify-content: space-between;
@@ -289,6 +302,10 @@ footer{
 
 .social-link{
     flex: 1 0 auto;
+}
+
+.social-link:hover{
+    color: hsl(0, 0%, 100%);
 }
 
 .social-link img{
@@ -449,7 +466,8 @@ footer{
 
     .underline{
         margin: auto auto auto 0;
-        transform: translate(-.5rem, -.4rem);
+        bottom: -5%;
+        left: -.5em;
     }
 
     .service-content{
